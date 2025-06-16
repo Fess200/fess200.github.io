@@ -28,6 +28,9 @@
     vertical-align: top;
     line-height: 130%;
 }
+.top_data {
+    float: left;
+}
 #contact_name {
     color:#2A3134;
     text-decoration: none;
@@ -47,6 +50,10 @@
     padding-top: 2px;
     margin-top: 0px;
     margin-bottom: 0px;
+}
+#contact_data {
+    padding-left: 20px;
+    padding-right: 20px;
 }
 #button_contact_data {
     padding-top: 11px;
@@ -89,6 +96,7 @@
     font-size: 0.85rem;
     font-weight: normal;
     line-height: 130%;
+    padding-top: 20px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -114,21 +122,4 @@
     line-height: 130%;
     margin-top: 0px;
     margin-bottom: 0px;
-}
-#top_content {
-    display: flex;
-    gap: 20px;
-}
-#adress_data {
-    row-gap: 20px;
-    flex-wrap: wrap;
-    flex-basis: 50px;
-}
-#test_wrap {
-    flex-wrap: wrap;
-    flex-basis: 50px;
-}
-#container_test {
-    flex-wrap: wrap;
-    flex-basis: 200px;
 }
