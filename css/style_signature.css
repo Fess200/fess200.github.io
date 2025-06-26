@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "Roboto";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+#top_content {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
+}
+
+#grid_company_data {
+    grid-area: company;
+}
+
+#grid_contact_name {
+    grid-area: name;
+}
+
+#grid_contact_data {
+    grid-area: contact;
+}
+
+#grid_address_data {
+    grid-area: address;
+}
+
+@media (min-width: 45rem) {
+    #top_content {
+        grid-template-areas:
+            "company name ."
+            "company contact address"
+    }
+
+    #contact_position {
+        padding-top: 2px;
+    }
+
+    #address_title {
+        padding-top: 0.35rem;
+    }
+}
+
+@media (max-width: 45rem) and (min-width: 27rem) {
+    #top_content {
+        grid-template-areas:
+            "company name"
+            "company contact"
+            "address address"
+    }
+
+    #contact_position {
+        padding-top: 2px;
+    }
+
+    #address_title {
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 27rem) {
+    #contact_name {
+        padding-top: 20px;
+    }
+
+    #address_title {
+        padding-top: 20px;
+    }
+
+    #grid_company_data {
+        grid-area: auto;
+    }
+
+    #grid_contact_name {
+        grid-area: auto;
+    }
+
+    #grid_contact_data {
+        grid-area: auto;
+    }
+
+    #grid_address_data {
+        grid-area: auto;
+    }
+}
+
+#content {
+    width: 100%;
+    background-color: white;
+}
+
+#contact_email_link {
+    display: block;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#contact_phone_link {
+    display: block;
+    padding-top: 6px;
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+#link_website {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+}
+
+#button_social_group {
+    padding-top: 5px;
+}
+
+.button_social {
+    padding-left: 12px;
+    text-decoration: none;
+}
+
+.button_social:first-child {
+    padding-left: 0px;
+}
+
+.button_social_text {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    padding-left: 6px;
+    vertical-align: top;
+    line-height: 130%;
+}
+
+#contact_name {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1.275rem;
+    font-weight: bold;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#contact_position {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 1.1rem;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#button_contact_data {
+    padding-top: 11px;
+}
+
+#button_email {
+    display: block;
+}
+
+#button_phone {
+    padding-top: 6px;
+    padding-left: 0px;
+    display: block;
+}
+
+#short_description {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 130%;
+    padding-top: 18px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    clear: left;
+}
+
+#full_description {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.7rem;
+    font-weight: normal;
+    line-height: 130%;
+    padding-top: 4px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#address_title {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#address_title:fullscreen {
+    padding-top: 0px;
+}
+
+#address_field {
+    color: #2A3134;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#address_country {
+    color: #A9B2BB;
+    text-decoration: none;
+    font-family: "Roboto";
+    font-size: 0.85rem;
+    font-weight: normal;
+    line-height: 130%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
